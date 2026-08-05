@@ -1,17 +1,13 @@
-import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/layout/navbar";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen items-center justify-center gap-4">
-      <Button>Primary</Button>
+    <>
+      <Navbar />
 
-      <Button variant="secondary">Secondary</Button>
-
-      <Button variant="ghost">Ghost</Button>
-
-      <Button size="lg">Large</Button>
-
-      <Button disabled>Disabled</Button>
-    </main>
+      <main>
+        <h1 className="p-10">Homepage</h1>
+      </main>
+    </>
   );
 }
