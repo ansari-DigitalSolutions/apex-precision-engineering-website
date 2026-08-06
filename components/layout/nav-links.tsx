@@ -1,14 +1,9 @@
-const links = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#about" },
-  { label: "Products", href: "#products" },
-  { label: "Contact", href: "#contact" },
-];
+import { NAVIGATION } from "@/components/contents/navigation";
 
 export function NavLinks() {
   return (
     <nav className="hidden gap-8 md:flex">
-      {links.map((link) => (
+      {NAVIGATION.map((link) => (
         <a
           key={link.label}
           href={link.href}
