@@ -13,7 +13,7 @@ export const trustIndicators = [
   },
   {
     id: 3,
-    icon: "settings",
+    icon: "cog",
     value: "25+",
     title: "Industries Served",
   },
