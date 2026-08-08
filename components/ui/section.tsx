@@ -1,13 +1,12 @@
-import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-type SectionProps = {
-  children: ReactNode;
+interface SectionProps {
+  children: React.ReactNode;
   className?: string;
-};
+}
 
 export function Section({ children, className }: SectionProps) {
   return (
-    <section className={cn("py-20 lg:py-28", className)}>{children}</section>
+    <section className={cn("py-12 lg:py-16", className)}>{children}</section>
   );
 }
